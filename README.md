@@ -9,5 +9,7 @@ For my journey with this challenge, I will be using [CodeWars](https://www.codew
 In addition to this Daily Javascript challenge, I will also be working on different projects and contributing to my [Medium page](https://medium.com/@kyledeguzmanx). Check it out.
 
 
-Codewars Profile: [@kyledeguzmanx](https://www.codewars.com/users/kyledeguzmanx)
+Codewars Profile: [@kyledeguzmanx](https://www.codewars.com/users/kyledeguzmanx)  
 Medium Profile: [@kyledeguzmanx](https://medium.com/@kyledeguzmanx)
+
+Started: 16 November 2021
