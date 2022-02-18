@@ -11,5 +11,13 @@ function mySet(){
         return dataStructure.indexOf(element) !== -1;
     }
     
-    
+    this.add  = (element) => {
+        if(!this.has(element)){
+                dataStructure.push(element);
+                return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
