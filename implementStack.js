@@ -24,3 +24,12 @@ var Stack = function(){
         }
     }
 }
+
+//example
+
+let bookStack = new Stack();
+
+bookStack.push("Harry Potter");
+bookStack.push("Harry Potter 2");
+bookStack.push("Black Beauty");
+bookStack.pop();
