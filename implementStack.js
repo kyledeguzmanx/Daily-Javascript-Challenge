@@ -1,6 +1,11 @@
 /*
     Javascript Implementation of a Stack
 
+    Principles:
+    - last in, first out
+    - You push items at the top/end of an array
+    - You pop items (or remove) at the top/end of the array first
+
 */
 
 var Stack = function(){
