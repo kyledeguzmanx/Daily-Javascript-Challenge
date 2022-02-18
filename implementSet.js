@@ -20,4 +20,16 @@ function mySet(){
             return false;
         }
     }
+
+
+    this.remove = (element){
+        if(this.has(element)){
+            var index = collection.indexOf(element);
+            collection.splice(index,1);
+            return true;
+        }
+        else
+            return false;
+        }
+    }
 }
