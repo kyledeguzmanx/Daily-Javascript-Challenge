@@ -11,4 +11,6 @@ function Queue(){
     this.print = () => {
         console.log(dataStructurre);
     }
+}   this.front = () => {
+    return dataStructurre[0];
 }
