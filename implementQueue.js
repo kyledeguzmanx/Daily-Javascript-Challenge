@@ -7,4 +7,8 @@ function Queue(){
     this.dequeue = () => {
         return dataStructurre.shift();
     }
+
+    this.print = () => {
+        console.log(dataStructurre);
+    }
 }
