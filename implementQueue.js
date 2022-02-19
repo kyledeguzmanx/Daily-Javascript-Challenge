@@ -14,8 +14,7 @@ function Queue(){
     this.front = () => {
         return dataStructurre[0];
     }
-    this.isEmpty() =>
-        {
+    this.isEmpty() = () =>{
             return dataStructurre.legth === 0 ? true : false;
         }
 }
