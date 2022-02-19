@@ -4,4 +4,7 @@ function Queue(){
     this.enqueue = (item) => {
         dataStructurre.push(item);
     }
+    this.dequeue = () => {
+        return dataStructurre.shift();
+    }
 }
