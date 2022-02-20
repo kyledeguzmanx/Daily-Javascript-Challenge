@@ -28,6 +28,18 @@ class BinarySearchTree{
                         return searchTree(node.left);
                     }
                 }
+                else if(data > node.data){
+                    if(!node.right){
+                        node.right = new Node(data);
+                        return;
+                    }
+                    else if(node.right){
+                        return searchTree(node.right);
+                    }
+                }
+                else{
+                    return null;
+                }
             }
         }
     }
