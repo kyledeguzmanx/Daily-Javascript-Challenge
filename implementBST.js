@@ -40,7 +40,16 @@ class BinarySearchTree{
                 else{
                     return null;
                 }
-            }
+            };
+            return searchTree(node);
+        } 
+    }
+    findMin(){
+        let current = this.root;
+        while(current.left){
+            current = current.left;
         }
+
+        return current.data;
     }
 }
