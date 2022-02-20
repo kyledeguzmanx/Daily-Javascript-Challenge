@@ -28,7 +28,7 @@ function mySet(){
             collection.splice(index,1);
             return true;
         }
-        else
+        else{
             return false;
         } 
     }
