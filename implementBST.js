@@ -52,4 +52,12 @@ class BinarySearchTree{
 
         return current.data;
     }
+
+    findMax(){
+        let current = this.root;
+        while(current.right){
+            current = current.right;
+        }
+        return current.data;
+    }
 }
