@@ -18,3 +18,10 @@ function Queue(){
             return dataStructurre.legth === 0 ? true : false;
         }
 }
+
+var myQueue = new Queue();
+myQueue.enqueue("A");
+myQueue.enqueue("B");
+myQueue.enqueue("C");
+myQueue.dequeue();
+myQueue.dequeue();
