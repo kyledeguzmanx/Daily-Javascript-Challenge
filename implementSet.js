@@ -33,3 +33,13 @@ function mySet(){
         } 
     }
 }
+
+var sampleSet = new sampleSet();
+sampleSet.add("Janine");
+sampleSet.add("Offred");
+sampleSet.add("Aunt Lydia");
+sampleSet.add("Ofglen");
+sampleSet.add("Serena");
+sampleSet.add("Janine");
+sampleSet.add("June");
+sampleSet.add("Offred");
