@@ -22,6 +22,10 @@ class BinarySearchTree{
                 if(data < node.data){
                     if(!node.left){
                         node.left = new Node(data);
+                        return;
+                    }
+                    else if(node.left){
+                        return searchTree(node.left);
                     }
                 }
             }
