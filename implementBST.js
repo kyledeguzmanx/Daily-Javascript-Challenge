@@ -19,7 +19,11 @@ class BinarySearchTree{
         }
         else{
             const searchTree = (node) => {
-                
+                if(data < node.data){
+                    if(!node.left){
+                        node.left = new Node(data);
+                    }
+                }
             }
         }
     }
