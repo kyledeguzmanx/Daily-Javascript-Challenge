@@ -1,6 +1,6 @@
 const JSX = 
 <div>
-  <h1>Heading</h1>
+  <h1  className="sample-class">Heading</h1>
   <p>Description</p>
   <ul>
     <li>Item 1</li>
