@@ -1,20 +1,24 @@
-const ChildComponent = () => {
+const CurrentDate = (props) => {
   return (
     <div>
-      <p>I am the child</p>
+      { /* Change code below this line */ }
+      <p>The current date is: {props.date} </p>
+      { /* Change code above this line */ }
     </div>
   );
 };
 
-class ParentComponent extends React.Component {
+class Calendar extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
       <div>
-        <h1>I am the parent</h1>
-          <ChildComponent/>
+        <h3>What date is it?</h3>
+        { /* Change code below this line */ }
+        <CurrentDate date={Date()} />
+        { /* Change code above this line */ }
       </div>
     );
   }
