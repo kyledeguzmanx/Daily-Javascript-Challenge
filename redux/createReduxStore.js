@@ -3,3 +3,8 @@ const reducer = (state = 5) => {
 }
 
 const store = Redux.createStore(reducer)
+
+/*------------------------------------*/
+const store = Redux.createStore(
+  (state = 5) => state
+);
