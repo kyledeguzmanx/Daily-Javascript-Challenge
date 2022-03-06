@@ -1,0 +1,8 @@
+//create an action
+const action = {
+  type: 'LOGIN'
+}
+// send actions using action creator here:
+function actionCreator() {
+  return action;
+}
