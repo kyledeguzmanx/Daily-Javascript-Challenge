@@ -4,13 +4,15 @@ const Schema = mongoose.Schema;
 mongoose.connect("mongodb+srv://kyle:kylee@cluster0.iejqx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
 
-let Person = new Schema({
-  name: String,
+const personSchema  = new Schema({
+  name: {type: String, required: true},
   age: Number,
   favoriteFoods: [String]
 });
+let Person = mongoose.model("Person", personSchema);
+
 /*
-let Person = new Schema({
+let personSchema = new Schema({
   name: {type: String}, //name: {type: String, required:true}
   age: Number,
   favoriteFoods:[{type: String}]
