@@ -33,3 +33,12 @@ const createAndSavePerson = (done) => {
     done(null,data);
   })
 };
+
+const createManyPeople = (arrayOfPeople, done) => {
+  Person.create(arrayOfPeople, (error, data) => {
+    if(error){
+      return console.error(error);
+    }
+    done(null, data)
+  });
+};
