@@ -19,3 +19,4 @@ let personSchema = new Schema({
   favoriteFoods:[{type: String}]
   //also Boolean
 });*/
+let Person = mongoose.model("Person", personSchema);
