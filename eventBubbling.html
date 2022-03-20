@@ -1,0 +1,14 @@
+<style>
+  body * {
+    margin: 20px;
+    border: 1px solid blue;
+  }
+</style>
+
+<div onclick="alert('Outer layer')">Outer layer
+  <div onclick="alert('Middle layer')">Middle layer
+    <div onclick="alert('Inner layer')">Inner layer
+
+    </div>
+  </div>
+</div>
