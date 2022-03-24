@@ -7,4 +7,6 @@ set.add("D");
 set.add("D");
 set.add("D");
 
+set.delete("A");
+console.log(set.has("C"));//true
 let setTwo = new Set(["A", "B", "C", "D", "E", "E", "E", "F"]);
