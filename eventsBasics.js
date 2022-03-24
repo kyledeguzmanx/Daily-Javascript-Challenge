@@ -14,3 +14,10 @@ sampleElement.addEventListener("onmoustover", () => {
 aotherElement.style.borderBottomColor = "red";
 
 
+//buttons
+<button onclick="sampleFunction()"> </button>
+sampleFunction(){
+ sampleElement.style.color = "yellow"; 
+}
+
+
