@@ -4,3 +4,8 @@ const anotherElement = document.querySelector("h1");
 sampleElement.addEventListener("onclick", ()=> {
   sampleElement.style.backgroundColor = blue;
 });
+sampleElement.addEventListener("onmoustover", () => {
+  sampleElement.innerHTML = "bestie";
+});
+
+
