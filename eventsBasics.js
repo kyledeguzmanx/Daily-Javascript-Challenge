@@ -6,6 +6,9 @@ sampleElement.addEventListener("onclick", ()=> {
 });
 sampleElement.addEventListener("onmoustover", () => {
   sampleElement.innerHTML = "bestie";
+})
+.addEventListener("onmouseout", () => {
+  sample.Element.innerHTML = "babe";
 });
 
 
