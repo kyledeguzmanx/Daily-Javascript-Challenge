@@ -2,7 +2,7 @@ const sampleElement = document.getElementById("sampleElement");
 const anotherElement = document.querySelector("h1");
 
 sampleElement.addEventListener("onclick", ()=> {
-  sampleElement.style.backgroundColor = blue;
+  sampleElement.style.backgroundColor = "blue";
 });
 sampleElement.addEventListener("onmoustover", () => {
   sampleElement.innerHTML = "bestie";
@@ -10,5 +10,7 @@ sampleElement.addEventListener("onmoustover", () => {
 .addEventListener("onmouseout", () => {
   sample.Element.innerHTML = "babe";
 });
+
+aotherElement.style.borderBottomColor = "red";
 
 
