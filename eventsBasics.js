@@ -20,4 +20,5 @@ sampleFunction(){
  sampleElement.style.color = "yellow"; 
 }
 
+<button onclick="this.innerHTML = Date()"> </button>
 
