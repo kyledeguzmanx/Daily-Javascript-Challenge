@@ -4,17 +4,17 @@ function domainName(url){
     );
     let end; 
     while(url.lastIndexOf("/") > start){
-     url = url.split("");
-     url.length = url.lastIndexOf("/");
-     url = url.join("");
-  }
-if(url[url.length-3] == "." && url[url.length-6] == "."){
-    url = url.split("");
-    url.length = url.lastIndexOf(".");
-    url = url.join("");
-}
+        url = url.split("");
+        url.length = url.lastIndexOf("/");
+        url = url.join("");
+    }
+    if(url[url.length-3] == "." && url[url.length-6] == "."){
+        url = url.split("");
+        url.length = url.lastIndexOf(".");
+        url = url.join("");
+    }
 
-end = url.lastIndexOf(".");
-return url.slice(start, end);
+    end = url.lastIndexOf(".");
+    return url.slice(start, end);
 }
 console.log(domainName("https://www.codewars.com/kata/514a024011ea4fb54200004b/solutions/javascript"))
