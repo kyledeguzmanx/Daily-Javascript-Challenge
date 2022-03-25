@@ -1,24 +1,26 @@
 function domainName(url){
   let start;
-let end; 
+  let end; 
 
-if(url.includes("www.")){
+  if(url.includes("www.")){
     start = url.indexOf("www.")+4;
-   //console.log(url.slice(url.indexOf("www.")+4,url.lastIndexOf("."))) 
-}
-else if(url.includes("http")){
+  }
+  else if(url.includes("http")){
     start = url.indexOf("://")+3;
-    //console.log(url.slice(url.indexOf("://")+3,url.indexOf(".")))
-}
-else if(!url.includes("www." && !url.includes("http"))){
+  }
+  else if(!url.includes("www." && !url.includes("http"))){
     start = 0;
-    //console.log(url.slice(0, url.indexOf(".")))
-}
+  }
 
-if(url.lastIndexOf("/") > start){
-        url = url.split("");
-        url.length = url.lastIndexOf("/");
-        url = url.join("");
+  while(url.lastIndexOf("/") > start){
+     url = url.split("");
+     url.length = url.lastIndexOf("/");
+     url = url.join("");
+  }
+if(url[url.length-3] == "." && url[url.length-6] == "."){
+    url = url.split("");
+    url.length = url.lastIndexOf(".");
+    url = url.join("");
 }
 
 end = url.lastIndexOf(".");
