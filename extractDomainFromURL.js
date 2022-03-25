@@ -1,17 +1,27 @@
-
-const url = " http://www.1ylun3q07sm7fj7omb.com/img/"
-console.log(url);
-// start of string        |       url.indexOf("://")+3
-// end of string          | url.indexOf(".com")
-//url[url.indexOf(".com")] start of .com
+function domainName(url){
+  let start;
+let end; 
 
 if(url.includes("www.")){
-   console.log(url.slice(url.indexOf("www.")+4,url.lastIndexOf("."))) 
+    start = url.indexOf("www.")+4;
+   //console.log(url.slice(url.indexOf("www.")+4,url.lastIndexOf("."))) 
 }
 else if(url.includes("http")){
-    console.log(url.slice(url.indexOf("://")+3,url.indexOf(".")))
+    start = url.indexOf("://")+3;
+    //console.log(url.slice(url.indexOf("://")+3,url.indexOf(".")))
 }
 else if(!url.includes("www." && !url.includes("http"))){
-    console.log(url.slice(0, url.indexOf(".")))
+    start = 0;
+    //console.log(url.slice(0, url.indexOf(".")))
 }
-    
+
+if(url.lastIndexOf("/") > start){
+        url = url.split("");
+        url.length = url.lastIndexOf("/");
+        url = url.join("");
+}
+
+end = url.lastIndexOf(".");
+console.log(url.slice(start, end))
+return url.slice(start, end);
+}
