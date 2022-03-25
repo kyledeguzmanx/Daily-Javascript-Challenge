@@ -1,3 +1,7 @@
+/*
+
+*/
+
 function domainName(url){
     let start = url.includes("www.") ? url.indexOf("www.")+4 : (
         url.includes("http") ? url.indexOf("://")+3 : 0
