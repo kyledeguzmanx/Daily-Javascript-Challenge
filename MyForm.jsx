@@ -32,7 +32,7 @@ class MyForm extends React.Component {
     );
   }
 }
-/*
+/* CAN ALSO USE STATE HOOKS
 
 
 */
