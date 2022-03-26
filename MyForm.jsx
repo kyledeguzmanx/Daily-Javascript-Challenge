@@ -32,7 +32,7 @@ class MyForm extends React.Component {
     );
   }
 }
-/* CAN ALSO USE STATE HOOKS
+/* CAN ALSO USE STATE HOOKS -------------------------
 EXAMPLE: 
 const [count, setCount] = useState(0);
 
