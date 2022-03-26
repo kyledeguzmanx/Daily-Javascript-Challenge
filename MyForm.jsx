@@ -40,5 +40,5 @@ SRC:
 https://reactjs.org/docs/hooks-state.html
 
 DESCRIPTION
-
+USE IN LIEU OF CREATING A STATE AND STATE HANDLER FUNCTION
 */
