@@ -28,7 +28,7 @@ function domainName(url){
 console.log(domainName("https://www.codewars.com/kata/514a024011ea4fb54200004b/solutions/javascript"))
 
 
-/*
+/*---------------------------------------------------------
 ALT SOLUTION
 function domainName(url){
   url = url.replace("https://", '');
