@@ -3,11 +3,14 @@ class SampleComponent extends React.Component{
     super(props)
   }
   
-  render(){
-    
+  render(){   
     return (
       <h1> hi </h1>
       );
     
+  }
+  
+  componentDidMount(){
+    //if the component did render FOR THE VERY FIRST TIME
   }
 }
