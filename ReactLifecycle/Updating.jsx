@@ -19,8 +19,9 @@ class SampleComponent extends React.Component{
   
   getSnapshotBeforeUpdate(prevProps, prevState){
       //have access to the previous props and state
-    document.getElementById("div1").innerHTML = "Before the update, the favorite was " + prevState.favoritecolor;
-
-    
+    document.getElementById("div1").innerHTML = "Before the update, the favorite was " + prevState.favoritecolor;    
+  }
+  componentDidUpdate(){
+   //if the component updated, then execute this block 
   }
 }
