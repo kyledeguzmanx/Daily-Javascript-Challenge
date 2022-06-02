@@ -16,4 +16,9 @@ class SampleComponent extends React.Component{
     else 
       return false;
   }
+  
+  getSnapshotBeforeUpdate(prevProps, prevState){
+      //have access to the previous props and state
+    
+  }
 }
